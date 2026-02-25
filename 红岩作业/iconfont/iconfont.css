@@ -1,0 +1,157 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1771914885621') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shizhongfill:before {
+  content: "\e74e";
+}
+
+.icon-pinglun:before {
+  content: "\e607";
+}
+
+.icon-xiangzuojiantou:before {
+  content: "\e660";
+}
+
+.icon-mian:before {
+  content: "\e67e";
+}
+
+.icon-arrow-right:before {
+  content: "\e622";
+}
+
+.icon-xinfeng:before {
+  content: "\e61b";
+}
+
+.icon-xihuan:before {
+  content: "\e8c3";
+}
+
+.icon-shuaxin:before {
+  content: "\e65e";
+}
+
+.icon-xiayishou:before {
+  content: "\e6b8";
+}
+
+.icon-jiantou-xia:before {
+  content: "\e62d";
+}
+
+.icon-shangyishou1:before {
+  content: "\e608";
+}
+
+.icon-fangkuang:before {
+  content: "\e641";
+}
+
+.icon-quanping:before {
+  content: "\e629";
+}
+
+.icon-24gl-volumeMiddle:before {
+  content: "\ea0d";
+}
+
+.icon-24gl-playlist:before {
+  content: "\ea6f";
+}
+
+.icon-24gl-repeat2:before {
+  content: "\ea75";
+}
+
+.icon-xihuan1:before {
+  content: "\e652";
+}
+
+.icon-geci:before {
+  content: "\e61c";
+}
+
+.icon-shouyinji:before {
+  content: "\e69d";
+}
+
+.icon-close:before {
+  content: "\e609";
+}
+
+.icon-xihuan2:before {
+  content: "\e606";
+}
+
+.icon-maikefeng:before {
+  content: "\e73b";
+}
+
+.icon-chat:before {
+  content: "\e66d";
+}
+
+.icon-yinzhi-biaozhun:before {
+  content: "\e864";
+}
+
+.icon-ziyuan:before {
+  content: "\e754";
+}
+
+.icon-yinle:before {
+  content: "\e60d";
+}
+
+.icon-hengxian:before {
+  content: "\e646";
+}
+
+.icon-shouye:before {
+  content: "\e602";
+}
+
+.icon-sousuo:before {
+  content: "\e60e";
+}
+
+.icon-clothes:before {
+  content: "\e8c7";
+}
+
+.icon-shoucangdaogedan:before {
+  content: "\e8b0";
+}
+
+.icon-shezhi:before {
+  content: "\e663";
+}
+
+.icon-bofang:before {
+  content: "\e620";
+}
+
+.icon-beijingyinle:before {
+  content: "\e601";
+}
+
+.icon-guangbo:before {
+  content: "\e87f";
+}
+
+.icon-gengduo:before {
+  content: "\e603";
+}
+

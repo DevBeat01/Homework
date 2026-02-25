@@ -1,0 +1,329 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 172px;
+  width: 93%;
+  margin: 15px auto;
+  /* background-color: pink; */
+}
+
+.header .poster {
+  width: 168px;
+  height: 168px;
+  border-radius: 10px;
+
+}
+
+.header .poster img {
+  border-radius: 10px;
+}
+
+.header .text {
+  width: 885px;
+  height: 168px;
+  /* background-color: skyblue; */
+}
+
+.header .text h2 {
+  font-size: 24px;
+  line-height: 40px;
+}
+
+.header .text p {
+  line-height: 35px;
+  font-size: 13px;
+}
+
+.xia {
+  width: 350px;
+  /* background-color: #fff; */
+}
+
+.xia>ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.xia ul img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.xia ul :nth-child(3) ul {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  gap: 3px;
+}
+
+.xia ul :nth-child(3) ul a {
+  color: #1b5eb2;
+}
+
+.xia ul li:last-child {
+  color: #818a96;
+}
+
+.anniu {
+  width: 350px;
+  margin-top: 25px;
+  /* background-color: #fff; */
+}
+
+.anniu ul {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.anniu li:first-child button {
+  padding: 8px 15px;
+  border-radius: 10px;
+  background-color: #ff1e34;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+}
+
+.anniu li:nth-child(2) button {
+  padding: 8px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: #e1d7e6 1px solid;
+  color: #000;
+  font-size: 14px;
+  background-color: #ece2f0;
+}
+
+.anniu li:nth-child(3) button {
+  padding: 7px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: #e1d7e6 1px solid;
+  color: #000;
+  font-size: 14px;
+  background-color: #ece2f0;
+}
+
+.anniu li:nth-child(4) button {
+  padding: 8px 11px;
+  border-radius: 10px;
+  background-color: #fff;
+  border: #e1d7e6 1px solid;
+  color: #000;
+  font-size: 14px;
+  background-color: #ece2f0;
+}
+
+/* 中间层 */
+.zhongjian {
+  display: flex;
+  justify-content: start;
+  gap: 50px;
+  line-height: 40px;
+  width: 93%;
+  height: 40px;
+  margin: 15px auto;
+  font-size: 15px;
+  font-weight: 400;
+  /* background-color: pink; */
+}
+
+/* 列表部分 */
+.song-list {
+  width: 93%;
+  margin: 0 auto;
+  background-color: #f5f9fc;
+  border-radius: 8px;
+  overflow: hidden;
+  /* box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); */
+}
+
+/* 列表头部 */
+.list-header {
+  background-color: #f5f9fc;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.list-header ul {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.list-header li {
+  font-size: 14px;
+  color: #818a96;
+  font-weight: 500;
+}
+
+.list-header .num {
+  width: 60px;
+}
+
+.list-header .title {
+  flex: 1;
+}
+
+.list-header .album {
+  width: 300px;
+}
+
+.list-header .like {
+  width: 80px;
+  text-align: center;
+}
+
+.list-header .time {
+  width: 80px;
+  text-align: right;
+}
+
+/* 列表内容 */
+/* .list-content {} */
+
+.list-item {
+  display: flex;
+  align-items: center;
+  height: 60px;
+  padding: 0 20px;
+  border-bottom: 1px solid #e0e0e0;
+  transition: background-color 0.2s ease;
+}
+
+.list-item:hover {
+  background-color: #fff;
+  border-radius: 12px;
+}
+
+.list-item li {
+  font-size: 14px;
+  color: #333;
+}
+
+.list-item .num {
+  width: 60px;
+  color: #999;
+}
+
+.list-item .title {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.list-item .title img {
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+}
+
+.song-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.song-info h4 {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-info h4 a {
+  color: #333;
+  text-decoration: none;
+}
+
+.song-info h4 a:hover {
+  color: #ff1e34;
+  text-decoration: underline;
+}
+
+.song-info p {
+  font-size: 12px;
+  color: #999;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.song-info p a {
+  color: #999;
+  text-decoration: none;
+}
+
+.song-info p a:hover {
+  color: #ff1e34;
+  text-decoration: underline;
+}
+
+.tag {
+  display: inline-block;
+  padding: 0 6px;
+  margin-right: 4px;
+  font-size: 10px;
+  line-height: 16px;
+  border-radius: 2px;
+  background-color: #f0f0f0;
+  color: #999;
+}
+
+.tag.vip {
+  background-color: #ffd79d;
+  color: #ff8a00;
+}
+
+.tag.mv {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.list-item .album {
+  width: 300px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: #999;
+}
+
+.list-item .album a {
+  color: #999;
+  text-decoration: none;
+}
+
+.list-item .album a:hover {
+  color: #ff1e34;
+  text-decoration: underline;
+}
+
+.list-item .like {
+  width: 80px;
+  text-align: center;
+}
+
+.list-item .like i {
+  font-size: 16px;
+  color: #999;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.list-item .like i:hover {
+  color: #ff1e34;
+}
+
+.list-item .time {
+  width: 80px;
+  text-align: right;
+  color: #999;
+}

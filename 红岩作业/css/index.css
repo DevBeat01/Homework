@@ -1,0 +1,554 @@
+/* 轮播图 */
+.lunbotu {
+  display: flex;
+  gap: 22px;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 42px;
+}
+
+.lunbotu .box-l {
+  width: 420px;
+  height: 156px;
+  border-radius: 10px;
+  background-color: #fff;
+  overflow: hidden;
+}
+
+/* 轮播图容器 */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+/* 轮播图 slides 容器 */
+.carousel-slides {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+/* 单个轮播图 slide */
+.carousel-slide {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.carousel-slide.active {
+  opacity: 1;
+  z-index: 2;
+}
+
+.carousel-slide a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.carousel-slide a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.carousel-slide a:hover::after {
+  opacity: 1;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+/* 轮播图控制按钮 - 移除 */
+.carousel-btn {
+  display: none;
+}
+
+/* 轮播图指示器 */
+.carousel-indicators {
+  position: absolute;
+  bottom: 12px;
+  left: 5px;
+  display: flex;
+  gap: 6px;
+  z-index: 3;
+}
+
+.carousel-indicators .indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.carousel-indicators .indicator.active {
+  background-color: #fff;
+}
+
+.lunbotu .box-c {
+  width: 420px;
+  height: 155px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.lunbotu .box-c .top {
+  width: 420px;
+  height: 36px;
+  /* background-color: #fff; */
+}
+
+.lunbotu .box-c .top h2 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 36px;
+  padding-left: 12px;
+  margin-top: 8px;
+}
+
+.lunbotu .box-c .top h2 small {
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.lunbotu .box-c .bottom ul {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 12px;
+}
+
+.lunbotu .box-c .bottom ul li {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.lunbotu .box-c .bottom ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.lunbotu .box-c .bottom ul li a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.lunbotu .box-c .bottom ul li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.lunbotu .box-c .bottom ul li:hover a::after {
+  opacity: 1;
+}
+
+.lunbotu .box-c .bottom ul img {
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+.lunbotu .box-r {
+  width: 199px;
+  height: 155px;
+  border-radius: 10px;
+  /* background-color: pink; */
+}
+
+.lunbotu .box-r a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.lunbotu .box-r a::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: 1;
+}
+
+.lunbotu .box-r a:hover::after {
+  opacity: 1;
+}
+
+.lunbotu .box-r img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 0;
+}
+
+/* 精选推荐 */
+.jingxuan {
+  width: 100%;
+  padding: 0 42px;
+  margin-bottom: 40px;
+}
+
+.jingxuan .box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.jingxuan .box-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.jingxuan .box-bottom li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.jingxuan .box-bottom li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.jingxuan .box-bottom li .title {
+  position: absolute;
+  top: 174px;
+  left: 12px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 2;
+}
+
+.jingxuan .box-bottom li span small {
+  color: rgba(136, 112, 112, 50);
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 2px;
+  font-size: 10px;
+  /* padding: 2px; */
+}
+
+.jingxuan .box-bottom a {
+  display: block;
+  width: 164px;
+  height: 216px;
+  border-radius: 10px;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+}
+
+.jingxuan .box-bottom a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 3;
+  transition: height 0.3s ease;
+}
+
+.jingxuan .box-bottom li:hover a::after {
+  height: 100%;
+}
+
+/* 为每个卡片设置与背景色匹配的覆盖层 */
+.jingxuan .box-bottom li:nth-child(1) a::after {
+  background: linear-gradient(to top, #897070 50%, transparent);
+}
+
+.jingxuan .box-bottom li:nth-child(2) a::after {
+  background: linear-gradient(to top, #e62627 50%, transparent);
+}
+
+.jingxuan .box-bottom li:nth-child(3) a::after {
+  background: linear-gradient(to top, #b8744a 50%, transparent);
+}
+
+.jingxuan .box-bottom li:nth-child(4) a::after {
+  background: linear-gradient(to top, #ba4300 50%, transparent);
+}
+
+.jingxuan .box-bottom li:nth-child(5) a::after {
+  background: linear-gradient(to top, #694b4b 50%, transparent);
+}
+
+.jingxuan .box-bottom li:nth-child(6) a::after {
+  background: linear-gradient(to top, #ad0058 50%, transparent);
+}
+
+/* 覆盖层文字样式 */
+.jingxuan .box-bottom .overlay-text {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.jingxuan .box-bottom .overlay-text p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.jingxuan .box-bottom li:hover .overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.jingxuan .box-bottom img {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.jingxuan .box-bottom li:nth-child(1) a {
+  background: linear-gradient(#756565, #877373);
+}
+
+.jingxuan .box-bottom li:nth-child(2) a {
+  background: linear-gradient(#ff004e, #ed3233);
+}
+
+.jingxuan .box-bottom li:nth-child(3) a {
+  background: linear-gradient(#8c6241, #ad774e);
+}
+
+.jingxuan .box-bottom li:nth-child(4) a {
+  background: linear-gradient(#94420c, #ab4a0a);
+}
+
+.jingxuan .box-bottom li:nth-child(5) a {
+  background: linear-gradient(#694b4b, #7d5758);
+}
+
+.jingxuan .box-bottom li:nth-child(6) a {
+  background: linear-gradient(#9a0e5d, #b10d68);
+}
+
+/* 推荐歌单 */
+.tuijian {
+  width: 100%;
+  padding: 0 42px;
+  margin-bottom: 40px;
+}
+
+.tuijian .box-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.tuijian .box-bottom ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tuijian .box-bottom li {
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  transition: box-shadow 0.3s ease;
+}
+
+.tuijian .box-bottom li:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  z-index: 10;
+}
+
+.tuijian .box-bottom li .title {
+  position: absolute;
+  top: 174px;
+  left: 12px;
+  font-weight: 400;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  z-index: 2;
+}
+
+.tuijian .box-bottom li span small {
+  color: rgba(136, 112, 112, 50);
+  background-color: #fff;
+  border-radius: 4px;
+  margin-right: 2px;
+  font-size: 10px;
+  /* padding: 2px; */
+}
+
+.tuijian .box-bottom a {
+  display: block;
+  width: 164px;
+  height: 216px;
+  border-radius: 10px;
+  background-color: pink;
+  position: relative;
+  overflow: hidden;
+}
+
+.tuijian .box-bottom a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: 3;
+  transition: height 0.3s ease;
+}
+
+.tuijian .box-bottom li:hover a::after {
+  height: 100%;
+}
+
+/* 为每个卡片设置与背景色匹配的覆盖层 */
+.tuijian .box-bottom li:nth-child(1) a::after {
+  background: linear-gradient(to top, #897070 50%, transparent);
+}
+
+.tuijian .box-bottom li:nth-child(2) a::after {
+  background: linear-gradient(to top, #e62627 50%, transparent);
+}
+
+.tuijian .box-bottom li:nth-child(3) a::after {
+  background: linear-gradient(to top, #b8744a 50%, transparent);
+}
+
+.tuijian .box-bottom li:nth-child(4) a::after {
+  background: linear-gradient(to top, #ba4300 50%, transparent);
+}
+
+.tuijian .box-bottom li:nth-child(5) a::after {
+  background: linear-gradient(to top, #694b4b 50%, transparent);
+}
+
+.tuijian .box-bottom li:nth-child(6) a::after {
+  background: linear-gradient(to top, #ad0058 50%, transparent);
+}
+
+/* 覆盖层文字样式 */
+.tuijian .box-bottom .overlay-text {
+  position: absolute;
+  bottom: 8px;
+  left: 12px;
+  color: #fff;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: bold;
+  z-index: 4;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.3s ease;
+}
+
+.tuijian .box-bottom .overlay-text p {
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  margin: 5px 0;
+}
+
+.tuijian .box-bottom li:hover .overlay-text {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.tuijian .box-bottom img {
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  z-index: 1;
+}
+
+.tuijian .box-bottom li:nth-child(1) a {
+  background: linear-gradient(#756565, #877373);
+}
+
+.tuijian .box-bottom li:nth-child(2) a {
+  background: linear-gradient(#ff004e, #ed3233);
+}
+
+.tuijian .box-bottom li:nth-child(3) a {
+  background: linear-gradient(#8c6241, #ad774e);
+}
+
+.tuijian .box-bottom li:nth-child(4) a {
+  background: linear-gradient(#94420c, #ab4a0a);
+}
+
+.tuijian .box-bottom li:nth-child(5) a {
+  background: linear-gradient(#694b4b, #7d5758);
+}
+
+.tuijian .box-bottom li:nth-child(6) a {
+  background: linear-gradient(#9a0e5d, #b10d68);
+}

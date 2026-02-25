@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网易云音乐</title>
+  <!-- 引入网页图标 favicon -->
+  <link rel="icon" href="./img/favicon.ico" type="image/x-icon">
+  <!-- 引入字体图标放在自己css文件前面 -->
+  <link rel="stylesheet" href="./iconfont/iconfont.css">
+  <!-- 引入css文件  先引入初始化css  之后是 公共样式  最后是 index页面样式 -->
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/common.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- 引入JavaScript文件 -->
+  <script src="./js/index.js"></script>
+</head>
+
+<body>
+  <div class="box">
+    <!-- 左侧导航栏部分 -->
+    <div class="daohanglan">
+      <div class="logo">
+        <h1>
+          <a href="./index.html" title="网易云音乐">网易云音乐</a>
+        </h1>
+      </div>
+      <div class="nav">
+        <ul>
+          <li><a href="index.html"><i class="iconfont icon-shouye"></i>推荐</a></li>
+          <li><a href="index.html"><i class="iconfont icon-yinle"></i>精选</a></li>
+          <li><a href="index.html"><i class="iconfont icon-guangbo"></i>漫游</a></li>
+          <li><a href="index.html"><i class="iconfont icon-shouyinji"></i>播客</a></li>
+          <li><a href="index.html"><i class="iconfont icon-chat"></i>关注</a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="my">
+        <ul>
+          <li>我的</li>
+          <li class="one"><a href="song.html"><i class="iconfont icon-xihuan"></i>我喜欢的音乐</a></li>
+          <li class="one"><a href="song.html"><i class="iconfont icon-shizhongfill"></i>最近播放</a></li>
+          <li class="one"><a href="song.html"><i class="iconfont icon-beijingyinle"></i>我的播客</a></li>
+          <li class="more"><a href=""><i class="iconfont icon-jiantou-xia"></i>更多</a></li>
+        </ul>
+      </div>
+      <div class="line"></div>
+      <div class="gedan">
+        <ul>
+          <li class="one"><a href="">创建的歌单</a></li>
+          <li class="two"><a href="song.html"><img src="./img/gedan1.png" alt="">我喜欢</a></li>
+          <li class="two"><a href="song.html"><img src="./img/gedan2.png" alt="">新建歌单1</a></li>
+          <li class="two"><a href="song.html"><img src="./img/gedan1.png" alt="">新建歌单3</a></li>
+          <li class="two"><a href="song.html"><img src="./img/gedan2.png" alt="">新建歌单4</a></li>
+
+        </ul>
+      </div>
+
+      <!-- 顶部导航栏 -->
+    </div>
+    <!-- 右侧主体 -->
+    <div class="box-right">
+      <!-- 顶部导航栏 -->
+      <div class="box-bod">
+        <div class="search">
+          <ul>
+            <li><a href="index.html"><i class="iconfont icon-xiangzuojiantou"></i></a></li>
+            <li>
+              <a href="#"><i class="iconfont icon-sousuo"></i></a>
+              <input type="text" placeholder="搜索">
+            </li>
+            <li><a href="#"><i class="iconfont icon-maikefeng"></i></a></li>
+          </ul>
+        </div>
+        <div class="nav-right">
+          <div class="user">
+            <ul>
+              <li><a href="#"><img src="./img/user.png" alt="" class="one"></a></li>
+              <li>
+                <a href="#">
+                  <p>123.</p>
+                </a>
+              </li>
+              <li><a href="#"><img src="./img/vip.png" alt="" class="two"></a></li>
+              <li><a href="#"><i class="iconfont icon-jiantou-xia"></i></a></li>
+            </ul>
+          </div>
+          <div class="icon">
+            <ul>
+              <li><a href=""><i class="iconfont icon-mian"></i></a></li>
+              <li><a href=""><i class="iconfont icon-xinfeng"></i></a></li>
+              <li><a href=""><i class="iconfont icon-shezhi"></i></a></li>
+              <li><a href=""><i class="iconfont icon-clothes"></i></a></li>
+              <li>
+                <div class="five"></div>
+              </li>
+              <li><a href=""><i class="iconfont icon-ziyuan"></i></a></li>
+              <li><a href=""><i class="iconfont icon-hengxian"></i></a></li>
+              <li><a href=""><i class="iconfont icon-fangkuang"></i></a></li>
+              <li><a href=""><i class="iconfont icon-close"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- 轮播 -->
+      <div class="lunbotu">
+        <div class="box-l">
+          <div class="carousel-container">
+            <div class="carousel-slides">
+              <div class="carousel-slide active">
+                <a href="">
+                  <img src="./img/lunbo1.png" alt="">
+                </a>
+              </div>
+              <div class="carousel-slide">
+                <a href="">
+                  <img src="./img/lunbo2.png" alt="">
+                </a>
+              </div>
+              <div class="carousel-slide">
+                <a href="">
+                  <img src="./img/lunbo3.png" alt="">
+                </a>
+              </div>
+            </div>
+            <button class="carousel-btn prev">‹</button>
+            <button class="carousel-btn next">›</button>
+            <div class="carousel-indicators">
+              <span class="indicator active"></span>
+              <span class="indicator"></span>
+              <span class="indicator"></span>
+            </div>
+          </div>
+        </div>
+        <div class="box-c">
+          <div class="top">
+            <h2>晚上好，<small>猜你最近喜欢听</small></h2>
+          </div>
+          <div class="bottom">
+            <ul>
+              <li><a href=""><img src="./img/box-c1.png" alt=""></a></li>
+              <li><a href=""><img src="./img/box-c2.png" alt=""></a></li>
+              <li><a href=""><img src="./img/box-c3.png" alt=""></a></li>
+              <li><a href=""><img src="./img/box-c4.png" alt=""></a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="box-r">
+          <a href="">
+            <img src="./img/feiji.png" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- 精选推荐 -->
+      <div class="jingxuan">
+        <div class="box-top">
+          <h2>精选推荐</h2>
+          <a href="song.html"><i class="iconfont icon-shuaxin"></i></a>
+        </div>
+        <div class="box-bottom">
+          <ul>
+            <li>
+              <span class=" title elliptical">
+                <small>免费听</small>每日推荐 | 从「Oka Praanam」听1234
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan1.png" alt="">
+                <span class="overlay-text">
+                  <small>免费听</small>
+                  每日推荐 | 从「Oka Praanam」听..
+                  <p>1 Oka Praanam</p>
+                  <p>2 Normal No M...</p>
+                  <p>3 Edge of My Li...</p>
+                </span>
+
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                海屿你、一半一半、嗜好
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan2.png" alt="">
+                <span class="overlay-text">
+                  海屿你、一半一半、嗜好
+                  <p>1 海屿你</p>
+                  <p>2 一半一半</p>
+                  <p>3 嗜好</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                从「Lift Yourself Up」开
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan3.png" alt="">
+                <span class="overlay-text">
+                  从「Lift Yourself Up」开
+                  <p>1 Let Me Down Slo...</p>
+                  <p>2 Born For This</p>
+                  <p>3 Traffic Light</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                今天从《The Fear》听起
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan4.png" alt="">
+                <span class="overlay-text">
+                  今天从《The Fear》听起
+                  <p>1 The Fear</p>
+                  <p>2 The Fear (Remix)</p>
+                  <p>3 The Fear (feat. SZA)</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                抽纸（爱人的能力）、童话镇、春雪
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan5.png" alt="">
+                <span class="overlay-text">
+                  抽纸（爱人的能力）、童话镇、春雪
+                  <p>1 抽纸（爱人的能力）</p>
+                  <p>2 童话镇</p>
+                  <p>3 春雪</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                打游戏听 Phonk | 在迷幻沉醉中体验极限手感
+              </span>
+              <a href="song.html">
+                <img src="./img/jingxuan6.png" alt="">
+                <span class="overlay-text">
+                  打游戏听 Phonk | 在迷幻沉醉中体验极限手感
+                  <p>1 Phonk</p>
+                  <p>2 Phonk (feat. SZA)</p>
+                  <p>3 Phonk (feat. SZA) (Remix)</p>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 推荐歌单 -->
+      <div class="tuijian">
+        <div class="box-top">
+          <a href="song.html">
+            <h2>推荐歌单</h2>
+          </a>
+          <a href="song.html"><i class="iconfont icon-shuaxin"></i></a>
+        </div>
+        <div class="box-bottom">
+          <ul>
+            <li>
+              <span class=" title elliptical">
+                适合玩游戏时听的BGM
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian1.png" alt="">
+                <span class="overlay-text">
+                  适合玩游戏时听的BGM
+                  <p>1 Happy Start</p>
+                  <p>2 C U Again (C...</p>
+                  <p>3 Another Day</p>
+                </span>
+
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                超燃让人热血沸腾的战歌
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian2.png" alt="">
+                <span class="overlay-text">
+                  超燃让人热血沸腾的战歌
+                  <p>1 Falling</p>
+                  <p>2 I Lose My Br...</p>
+                  <p>3 Leadfoot Ger...</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                欧美精选 | 嗨，伙计要来首10w+吗？
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian3.png" alt="">
+                <span class="overlay-text">
+                  欧美精选 | 嗨，伙计要来首10w+吗？
+                  <p>1 Sugar</p>
+                  <p>2 Everybody Di...</p>
+                  <p>3 time machine...</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                那些超燃的音乐（全部免费）
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian4.png" alt="">
+                <span class="overlay-text">
+                  那些超燃的音乐（全部免费）
+                  <p>1 FUNK ESTRANHO...</p>
+                  <p>2 Montagem B...</p>
+                  <p>3 Montagem N...</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                抽纸（爱人的能力）、童话镇、春雪
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian5.png" alt="">
+                <span class="overlay-text">
+                  抽纸（爱人的能力）、童话镇、春雪
+                  <p>1 抽纸（爱人的能力）</p>
+                  <p>2 童话镇</p>
+                  <p>3 春雪</p>
+                </span>
+              </a>
+            </li>
+            <li>
+              <span class=" title elliptical">
+                午后慢生活 | 伴阳欧美旋律躺在轻盈云朵上
+              </span>
+              <a href="song.html">
+                <img src="./img/tuijian6.png" alt="">
+                <span class="overlay-text">
+                  午后慢生活 | 伴阳欧美旋律躺在轻盈云朵上
+                  <p>1 Intentions (Acoustic)</p>
+                  <p>2 The Fate of Ophel...</p>
+                  <p>3 Get done Crying</p>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- 进度条 -->
+    <div class="progress-bar-container">
+      <div class="progress-bar"></div>
+    </div>
+    <!-- 播放栏 -->
+    <div class="bofanglan">
+      <div class="box-l">
+        <ul>
+          <li><a href=""><img src="./img/bofang.png" alt=""></a></li>
+          <li>
+            <h4><a href="">BANG BANG</a></h4>
+            <p><a href="">IVE</a></p>
+          </li>
+          <li><a href=""><i class="iconfont icon-xihuan1"></i></a></li>
+          <li><a href=""><i class="iconfont icon-pinglun"></i></a></li>
+        </ul>
+      </div>
+      <div class="box-c">
+        <ul>
+          <li><a href=""><i class="iconfont icon-24gl-repeat2"></i></a></li>
+          <li><a href=""><i class="iconfont icon-shangyishou1 two"></i></a></li>
+          <li><a href="#" class="play-btn"><i class="iconfont icon-bofang bofang"></i></a></li>
+          <li><a href=""><i class="iconfont icon-xiayishou two"></i></a></li>
+          <li><a href=""><i class="iconfont icon-24gl-playlist"></i></a></li>
+
+        </ul>
+      </div>
+      <div class="box-r">
+        <ul>
+          <li><a href=""><i class="iconfont icon-yinzhi-biaozhun one"></i></a></li>
+          <li><a href=""><i class="iconfont icon-shoucangdaogedan two"></i></a></li>
+          <li><a href=""><i class="iconfont icon-geci three"></i></a></li>
+          <li><a href=""><i class="iconfont icon-24gl-volumeMiddle four"></i></a></li>
+          <li><a href=""><i class="iconfont icon-gengduo five"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- 音频元素 -->
+  <audio id="audio-player" src="./audio/35924610094-1-30216.mp4" preload="auto">
+    您的浏览器不支持音频元素。
+  </audio>
+</body>
+
+</html>
